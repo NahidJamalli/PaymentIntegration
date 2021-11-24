@@ -1,0 +1,18 @@
+@page
+@model PaymentIntegration.Pages.ThreeDSReturn
+
+@{
+    Layout = "Shared/_Layout";
+}
+
+@if (Model.Errors != null && Model.Errors.Count > 0)
+{
+    <ul class="list-group">
+        @foreach (var err in Model.Errors)
+        {
+            <li class="list-group-item">@err</li>
+        }
+    </ul>
+}
+
+<h3>Payment Status: @Model.PaymentStatus</h3>

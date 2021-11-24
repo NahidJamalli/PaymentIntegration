@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{AD380329-EF25-4A3C-A46E-8B10CA201244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.DumDumPay", "Payment.DumDumPay\Payment.DumDumPay.csproj", "{46887206-A2C1-4540-B30D-FC14801EDAA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{994E53AA-01D9-4896-BC2B-798CF9FDBF8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentIntegration", "PaymentIntegration\PaymentIntegration.csproj", "{1A3F2756-870E-45CC-801C-55224BBF67E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46887206-A2C1-4540-B30D-FC14801EDAA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46887206-A2C1-4540-B30D-FC14801EDAA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46887206-A2C1-4540-B30D-FC14801EDAA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46887206-A2C1-4540-B30D-FC14801EDAA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A3F2756-870E-45CC-801C-55224BBF67E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A3F2756-870E-45CC-801C-55224BBF67E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A3F2756-870E-45CC-801C-55224BBF67E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A3F2756-870E-45CC-801C-55224BBF67E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{46887206-A2C1-4540-B30D-FC14801EDAA6} = {AD380329-EF25-4A3C-A46E-8B10CA201244}
+		{1A3F2756-870E-45CC-801C-55224BBF67E2} = {994E53AA-01D9-4896-BC2B-798CF9FDBF8B}
+	EndGlobalSection
+EndGlobal

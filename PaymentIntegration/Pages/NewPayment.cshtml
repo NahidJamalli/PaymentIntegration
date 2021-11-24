@@ -1,0 +1,59 @@
+@page "/"
+@model PaymentIntegration.Pages.NewPayment
+
+@{
+  Layout = "Shared/_Layout";
+  ViewData["ViewTitle"] = "Payment";
+}
+
+@if (Model.Errors != null && Model.Errors.Count > 0)
+{
+    <ul class="list-group">
+        @foreach (var err in Model.Errors)
+        {
+            <li class="list-group-item">@err</li>
+        }
+    </ul>
+}
+
+<div class="row">
+  <div class="col-lg-6 col-md-8 col-sm-12">
+    <form method="post">
+      <div class="row">
+        <div class="mb-3 col-12">
+          <label asp-for="PaymentContext.Amount" class="form-label"></label>
+          <input type="number" class="form-control" asp-for="PaymentContext.Amount">
+        </div>
+        <div class="mb-3 col-6">
+          <label asp-for="PaymentContext.Country" class="form-label"></label>
+          <input type="text" class="form-control" asp-for="PaymentContext.Country">
+        </div>
+        <div class="mb-3 col-6">
+          <label asp-for="PaymentContext.Currency" class="form-label"></label>
+          <input type="text" class="form-control" asp-for="PaymentContext.Currency">
+        </div>
+        <div class="mb-3 col-12">
+          <label asp-for="PaymentContext.CardNumber" class="form-label"></label>
+          <input type="text" class="form-control" asp-for="PaymentContext.CardNumber">
+        </div>
+        <div class="mb-3 col-6">
+          <label asp-for="PaymentContext.CardHolder" class="form-label"></label>
+          <input type="text" class="form-control" asp-for="PaymentContext.CardHolder">
+        </div>
+        <div class="mb-3 col-3">
+          <label asp-for="PaymentContext.Cvv" class="form-label"></label>
+          <input type="text" class="form-control" asp-for="PaymentContext.Cvv">
+        </div>
+        <div class="mb-3 col-3">
+          <label asp-for="PaymentContext.CardExpiryDate" class="form-label"></label>
+          <input type="text" class="form-control" asp-for="PaymentContext.CardExpiryDate">
+        </div>
+        <div class="mb-3 col-12">
+          <label asp-for="PaymentContext.OrderId" class="form-label"></label>
+          <input type="text" class="form-control" asp-for="PaymentContext.OrderId">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+@page
+@model PaymentIntegration.Pages.ThreeDS
+
+@{
+    Layout = "Shared/_Layout";
+}
+
+<form action="https://dumdumpay.site/secure/" method="POST">
+    <input type="text" name="MD" value="testorder-1"/>
+    <input type="text" name="TermUrl" value="http://localhost:5000/ThreeDSReturn"/>
+    <input type="text" name="PaReq" value="@Model.ThreeDsContext.PaReq"/>
+    <input type="submit" title="Submit"/>
+</form>
